@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Edit & Delete Page</title>
+<script type="text/javascript" src="js/valid.js"> ></script>
+</head>
+<h3 align="center"><i>Update_Content</i></h3>
+<body>
+<link rel="stylesheet" href="css/edit_delete.css" type="text/css" />
+	<form action="Admin_Edit.html" id="Form1">
+    	<div id="Update" align="center">
+        	<p>Enter No.of AC : 
+        	  <input type="text" id="txt_Ac" class="textbox" style="margin-left:20px" maxlength="5" />
+          </p>
+        	<p>Enter No.of Fan : 
+              <input type="text" id="txt_Fan" class="textbox" style="margin-left:20px" />
+          </p>
+        	<p>Enter No.of Chairs : 
+              <input type="text" id="txt_Chair" class="textbox" style="margin-left:4px" />
+          </p>
+          <p style="margin-right:80px"> Specification :
+         <ul>
+          <li><input type="checkbox" id="chk_Projector" style="margin-left:12px"  />Projector</li>
+          <li><input type="checkbox" id="chk_Slide" style="margin-left:40px" />Slide Changer</li>
+          <li><input type="checkbox" id="chk_Keyboard" style="margin-left:76px" />Wireless-Keyboard</li>
+          <li><input type="checkbox" id="chk_Mouse" style="margin-left:58px" />Wireless-Mouse</li>
+          <li><input type="checkbox" id="chk_Camera" />Camera</li>
+          </ul> 
+            </p>
+        	<p>Enter Availability : 
+              <input type="checkbox" id="check_Available" style="margin-left:10px" />
+          </p>
+          	<p>
+        	  <input name="Submit" type="submit" id="btn_Update" value="Update" width="50px" height="100px" />
+        	</p>
+        </div>
+    </form>
+</body>
+</html>

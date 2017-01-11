@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Main Page</title>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<h1 align="center"><marquee> Hall Booking </marquee></h1>
+
+<form action="app/common.php" id="form2" method="post">
+
+<div id="mainimgPan">
+  <div id="mainimg">
+	<div id="slider" class="nivoSlider" style="float:right;">
+                <img src="pic/1.JPG" alt="" />
+                <img src="pic/2.JPG" alt="" />
+     </div>
+    </div>
+ </div>
+		<div align="left" id="Common">
+        	<p>User Name :  
+        	  <input type="text" name="txt_User" maxlength="15" style="margin-left:62px" placeholder="Enter Alphabets Only" required/>
+        <p>Chief Guest Name :  
+        	  <input type="text" name="txt_Guest" maxlength="15" style="margin-left:20px" placeholder="Enter Alphabets Only" required/> <input type="file" id="file_Guest" accept="application/pdf" required />
+        </p>
+        <p>User Contact Number:  
+       	  <input type="int" name="txt_UserNo" maxlength="15" placeholder="Enter Numeric Value Only" required/>
+        </p>
+        <p>User Address :
+          <textarea name="txt_Address" id="txt_Address" style="margin-left:46px" required></textarea>
+</p>
+          <p>user Mail_id :
+          <input type="mail" name="txt_Mail" style="margin-left:56px" required/> 
+<p>Specification :
+  <select name="dropdown" name="drop_Specification" style="margin-left:54px" required>
+    <option value="select" selected>---Select---</option>
+    <option value="Ac">AC</option>
+    <option value="Fan">Fan</option>
+  </select>
+</p>
+       	  <p>Specialization :
+          <ul style="list-style-type:none">
+          <li><input type="checkbox" name="chk_Projector" style="margin-left:12px"  />Projector</li>
+          <li><input type="checkbox" name="chk_Slide" style="margin-left:12px" />Slide Changer</li>
+          <li><input type="checkbox" name="chk_Keyboard" style="margin-left:12px" />Wireless-Keyboard</li>
+          <li><input type="checkbox" name="chk_Mouse" style="margin-left:12px" />Wireless-Mouse</li>
+          <li><input type="checkbox" name="chk_Camera" style="margin-left:12px" />Camera</li>
+         </ul> 
+   </p>
+    <p>Purpose of Seminar : 
+      <select name="dropdown2" name="drop_Purpose" style="margin-left:20px" required>
+              <option value="select" selected>---Select---</option>
+              <option value="Education">Education</option>
+              <option value="Industrial">Industrial</option>
+              <option value="Course">Course</option>
+              <option value="Other">Others</option>
+            </select>
+       </p>
+       <p> Duration of Seminar : 
+           From:<input type="date" name="date_From" required/> To:<input type="date" name="date_To" required="Please select Calender" />
+       </p>
+       <p>Seminar Hall Name : 
+       	<input type="text" name="txt_Hall" style="margin-left:30px" />
+        </p>
+        
+        <button type="submit" name="btn_Save" style="margin-left:200px ">Save</button>   
+        <button type="submit" name="btn_Print" style="margin-left:100px">Print</button>
+		</div>
+</form>
+</body>
+</html>
